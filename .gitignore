@@ -1,0 +1,35 @@
+ - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+
+[!] The `Mooveapp [Release]` target overrides the `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` build setting defined in `Pods/Target Support Files/Pods-Mooveapp/Pods-Mooveapp.release.xcconfig'. This can lead to problems with the CocoaPods installation
+    - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+➜  mooveapp git:(app_278-ingenico-sdk) ✗ pod install                                                                       21.3s < Fri May 11 16:54:34 2018
+Analyzing dependencies
+Removing CryptoSwift
+Removing IngenicoConnectKit
+Downloading dependencies
+Using Adyen (1.10.0)
+DerivedData/
+*.ipa
+*.dSYM.zip
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+**/IDEWorkspaceChecks.plist
+## Other
+*.moved-aside
+*.xcuserstate
+# CocoaPods
+Pods/
+# Fastlane
+installer/
+fastlane/report.xml
+fastlane/test_output

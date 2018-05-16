@@ -12,6 +12,7 @@
 		2EF92D3A20AC1A06001E17E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF92D3820AC1A06001E17E9 /* Main.storyboard */; };
 		2EF92D3C20AC1A08001E17E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF92D3B20AC1A08001E17E9 /* Assets.xcassets */; };
 		2EF92D3F20AC1A08001E17E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF92D3D20AC1A08001E17E9 /* LaunchScreen.storyboard */; };
+		9F77102F61CB82153DC089DF /* Pods_IngenicoSwift4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8753C85C9A56C261FA226A3D /* Pods_IngenicoSwift4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2EF92D3B20AC1A08001E17E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EF92D3E20AC1A08001E17E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EF92D4020AC1A08001E17E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8753C85C9A56C261FA226A3D /* Pods_IngenicoSwift4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IngenicoSwift4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26E76C3896A43F91EDAEBF3 /* Pods-IngenicoSwift4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngenicoSwift4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IngenicoSwift4/Pods-IngenicoSwift4.debug.xcconfig"; sourceTree = "<group>"; };
+		D38E1AEFA2307D1DF81299C3 /* Pods-IngenicoSwift4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngenicoSwift4.release.xcconfig"; path = "Pods/Target Support Files/Pods-IngenicoSwift4/Pods-IngenicoSwift4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F77102F61CB82153DC089DF /* Pods_IngenicoSwift4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2EF92D3320AC1A06001E17E9 /* IngenicoSwift4 */,
 				2EF92D3220AC1A06001E17E9 /* Products */,
+				629F6016A5723C94CFA5B93B /* Pods */,
+				6C82781292E4BC99B5426230 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = IngenicoSwift4;
 			sourceTree = "<group>";
 		};
+		629F6016A5723C94CFA5B93B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A26E76C3896A43F91EDAEBF3 /* Pods-IngenicoSwift4.debug.xcconfig */,
+				D38E1AEFA2307D1DF81299C3 /* Pods-IngenicoSwift4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C82781292E4BC99B5426230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8753C85C9A56C261FA226A3D /* Pods_IngenicoSwift4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EF92D4320AC1A08001E17E9 /* Build configuration list for PBXNativeTarget "IngenicoSwift4" */;
 			buildPhases = (
+				5271FC43CC0EBD59EFCB73D7 /* [CP] Check Pods Manifest.lock */,
 				2EF92D2D20AC1A06001E17E9 /* Sources */,
 				2EF92D2E20AC1A06001E17E9 /* Frameworks */,
 				2EF92D2F20AC1A06001E17E9 /* Resources */,
+				5701068551C113CEAE024DD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5271FC43CC0EBD59EFCB73D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IngenicoSwift4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5701068551C113CEAE024DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IngenicoSwift4/Pods-IngenicoSwift4-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/IngenicoConnectKit/IngenicoConnectKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IngenicoConnectKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IngenicoSwift4/Pods-IngenicoSwift4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EF92D2D20AC1A06001E17E9 /* Sources */ = {
@@ -278,15 +347,13 @@
 		};
 		2EF92D4420AC1A08001E17E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26E76C3896A43F91EDAEBF3 /* Pods-IngenicoSwift4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSYJRV5Y23;
 				INFOPLIST_FILE = IngenicoSwift4/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manhhavu.IngenicoSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +363,13 @@
 		};
 		2EF92D4520AC1A08001E17E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38E1AEFA2307D1DF81299C3 /* Pods-IngenicoSwift4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSYJRV5Y23;
 				INFOPLIST_FILE = IngenicoSwift4/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manhhavu.IngenicoSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
